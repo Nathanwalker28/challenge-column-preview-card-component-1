@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url('fonts/LexendDeca-Regular.woff2') format('woff2'),
+        url('fonts/LexendDeca-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Big Shoulders Display';
+    src: url('fonts/BigShouldersDisplay-Thin.woff2') format('woff2'),
+        url('fonts/BigShouldersDisplay-Thin.woff') format('woff');
+    font-style: normal;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    Font-size: 15px;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca';
+    margin: 0; padding: 0;
+    background: hsl(0, 0%, 95%);
+}
+.container{
+    display: flex;
+    width: 800px;
+    height: auto;
+    color: aliceblue;
+    height: 450px;
+    margin-top: 5%;
+}
+.card-titre{
+    color: hsl(0, 0%, 95%) ;
+    font-family: 'Big Shoulders Display';
+}
+.card-text{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca';
+    font-weight: 100;
+    word-break :normal;
+    height: 180px;
+}
+.card-1{
+    background:  hsl(31, 77%, 52%);
+    padding: 5%;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.card-2{
+    background: hsl(184, 100%, 22%);
+    padding: 5%;
+    background-size: cover;
+}
+.card-3{
+    background: hsl(179, 100%, 13%);
+    padding: 5%;
+    background-size: cover;
+    border-radius: inherit;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.container a{
+    width: 9em;
+    height: 3em;
+    border-radius: 2em;
+    display: block;
+    line-height: 3em;
+    text-align: center;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom : 50px;
+    
+}
+.card-1 a:hover{
+    background: #fff;
+    color: hsl(31, 77%, 52%);
+}
+.card-2 a:hover{
+    background: #fff;
+    color:hsl(184, 100%, 22%) ;
+}
+.card-3 a:hover{
+    background: #fff;
+    color:hsl(179, 100%, 13%);
+}
+@media screen and (max-width : 500px) {
+    .container{
+        margin-top: 200px;
+        flex-direction: column;
+        width: 250px;
+        height: auto;
+    }
+    .card-text{
+        height: auto;
+    }
+    .card-1{
+        height:300px ;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    .card-2{
+        height: 300px;
+    }
+    .card-3{
+        height: 300px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+}
